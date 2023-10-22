@@ -37,7 +37,7 @@ export const Projects = () => {
         <div className="album mb-5">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             {projects.map((p, i) => (
-              <div className="col" key={i}>
+              <div className="col-md" key={i}>
                 <div className="card shadow-sm">
                   <img
                     className="card-img-top"
