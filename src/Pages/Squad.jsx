@@ -19,7 +19,7 @@ export const Squad = () => {
         </section>
 
         <div className="card-group justify-content-center">
-          <div className="col-4">
+          <div className="col-md-6">
             <div className="card border-0">
               <div className="card-body text-center">
                 <img
