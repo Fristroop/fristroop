@@ -41,10 +41,12 @@ export const Navbar = () => {
               </a>
               <button
                 type="button"
-                className="btn-close"
+                className="btn"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
-              ></button>
+              >
+                <i className="fa-solid fa-xmark"></i>
+              </button>
             </div>
 
             <div className="offcanvas-body">
