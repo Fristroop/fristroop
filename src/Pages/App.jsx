@@ -4,6 +4,7 @@ import { Navbar } from "../components/Navbar";
 import logo from "../assets/imgs/logo.png";
 import coding from "../assets/imgs/coding.jpg";
 import { Theme } from "../components/Theme";
+import { Footer } from "../components/Footer";
 
 export const App = () => {
   return (
@@ -22,10 +23,13 @@ export const App = () => {
             browsers and ensure an exceptional experience for all of your users
           </p>
 
-          <div className="mb-3">
-            <button className="btn btn-outline-success btn-lg border-3 rounded-circle">
-              <i className="fa-solid fa-play"></i>
-            </button>
+          <div className="my-3">
+            <a
+              href="https://github.com/Fristroop"
+              className="fs-1 text-body-emphasis"
+            >
+              <i className="fa-brands fa-github me-1"></i>
+            </a>
           </div>
 
           <button className="btn border">
@@ -71,9 +75,7 @@ export const App = () => {
           </div>
         </div>
 
-        <div className="col-12 px-4 py-5" data-aos="fadeIn">
-          <h2 className="pb-2 border-bottom">What do we offer?</h2>
-
+        <div className="col-12 px-4 py-5">
           <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
             <div className="col d-flex align-items-start">
               <i className="fa-solid fa-bolt text-warning flex-shrink-0 me-3 fs-3"></i>
@@ -122,8 +124,14 @@ export const App = () => {
           </div>
         </div>
 
-        <div className="col-12">x</div>
+        <div className="col-12 my-5 d-flex justify-content-center">
+          <a href="/pricing" className="btn btn-outline-warning btn-lg fw-bold">
+            Start journey with Fristroop now!
+          </a>
+        </div>
       </main>
+
+      <Footer />
     </>
   );
 };

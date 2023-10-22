@@ -5,7 +5,7 @@ export const NotFound = () => {
   return (
     <div className="not-found container-fluid">
       <div className="d-flex justify-content-center align-items-center h-100">
-        <div className="col-md-6 text-center rounded p-3">
+        <div className="col-md-6 text-center text-white rounded p-3">
           <h1 className="text">
             It looks like you are lost. There is nothing to see!
           </h1>

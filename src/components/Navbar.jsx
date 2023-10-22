@@ -9,7 +9,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav id="navbar" className="navbar navbar-expand-lg">
+      <nav id="navbar" className="navbar navbar-expand-md">
         <div className="container-fluid">
           <a href={"/"} className="navbar-brand d-flex align-items-center">
             <img src={logo} alt="Logo" height="50" className="logo mx-1" />
@@ -51,32 +51,31 @@ export const Navbar = () => {
 
             <div className="offcanvas-body">
               <ul className="navbar-nav flex-row flex-wrap flex-grow-1 px-3">
-                <li className="nav-item col-6 col-lg-auto">
+                <li className="nav-item col-6 col-md-auto">
                   <a href="/" className="nav-link active">
-                    <i className="fa-solid fa-share-from-square me-2 d-lg-none"></i>
+                    <i className="fa-solid fa-share-from-square me-2 d-md-none"></i>
                     Home
                   </a>
                 </li>
-                <li className="nav-item col-6 col-lg-auto">
+                <li className="nav-item col-6 col-md-auto">
                   <a href="/projects" className="nav-link">
-                    <i className="fa-solid fa-list-check me-2 d-lg-none"></i>
+                    <i className="fa-solid fa-list-check me-2 d-md-none"></i>
                     Projects
                   </a>
                 </li>
-                <li className="nav-item col-6 col-lg-auto">
+                <li className="nav-item col-6 col-md-auto">
                   <a href="/pricing" className="nav-link">
-                    <i className="fa-solid fa-hand-holding-dollar me-2 d-lg-none"></i>
+                    <i className="fa-solid fa-hand-holding-dollar me-2 d-md-none"></i>
                     Pricing
                   </a>
                 </li>
-                <li className="nav-item col-6 col-lg-auto">
+                <li className="nav-item col-6 col-md-auto">
                   <a href="/squad" className="nav-link">
-                    <i className="fa-solid fa-user-group me-2 d-lg-none text-nowrap"></i>
+                    <i className="fa-solid fa-user-group me-2 d-md-none text-nowrap"></i>
                     Squad
                   </a>
                 </li>
               </ul>
-              <div className="navbar-nav flex-row flex-wrap ms-md-auto text-center"></div>
             </div>
           </div>
         </div>
