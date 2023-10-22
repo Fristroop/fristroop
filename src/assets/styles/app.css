@@ -1,0 +1,39 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+  transition: all 0.35s;
+}
+
+.navbar-brand:hover {
+  transform: rotate(-5deg) scale(1.1);
+}
+
+.navbar-toggler {
+  border: none;
+  color: #ddd;
+}
+
+.navbar-toggler:focus {
+  color: #fff;
+  box-shadow: none;
+}
+
+.nav-link {
+  transition: all 0.35s;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.colored {
+  background: linear-gradient(to right, #29c7d7, #f98d38);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
