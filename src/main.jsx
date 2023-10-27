@@ -5,9 +5,9 @@ import { App } from "./Pages/App";
 import { NotFound } from "./Pages/NotFound";
 import { Projects } from "./Pages/Projects";
 import { Pricing } from "./Pages/Pricing";
-
-import "./assets/styles/main.css";
 import { Squad } from "./Pages/Squad";
+
+import './assets/bootstrap.scss';
 
 document.body.setAttribute(
   "data-bs-theme",

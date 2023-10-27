@@ -1,10 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-import "../assets/styles/app.css";
 import { Navbar } from "../components/Navbar";
-import logo from "../assets/imgs/logo.png";
-import coding from "../assets/imgs/coding.jpg";
 import { Theme } from "../components/Theme";
 import { Footer } from "../components/Footer";
+
+import "../assets/styles/app.css";
+
+import logo from "../assets/imgs/logo.png";
+import coding from "../assets/imgs/coding.jpg";
 
 export const App = () => {
   return (
