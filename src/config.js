@@ -1,12 +1,28 @@
 export const API = import.meta.env.PROD ? "" : "https://localhost:3000";
 console.log(API);
 
-export const social = {
-  github: "https://github.com/Fristroop",
-  twitter: "https://twitter.com/Fristroop",
-  instagram: "https://www.instagram.com/fristroop/",
-  tiktok: "https://www.tiktok.com/@fristroop",
-};
+export const socials = [
+  {
+    icon: "fa-brands fa-github",
+    label: "Github",
+    href: "https://github.com/Fristroop",
+  },
+  {
+    icon: "fa-brands fa-x-twitter",
+    label: "x",
+    href: "https://x.com/Fristroop",
+  },
+  {
+    icon: "fa-brands fa-instagram",
+    label: "Instagram",
+    href: "https://www.instagram.com/fristroop/",
+  },
+  {
+    icon: "fa-brands fa-tiktok",
+    label: "Tiktok",
+    href: "https://www.tiktok.com/@fristroop",
+  },
+];
 
 export const pages = [
   {

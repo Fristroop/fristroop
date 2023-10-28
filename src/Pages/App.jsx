@@ -9,7 +9,7 @@ import "../assets/styles/app.css";
 
 import logo from "../assets/imgs/logo.png";
 import coding from "../assets/imgs/coding.jpg";
-import { social } from "../config";
+import { socials } from "../config";
 
 export const App = () => {
   useEffect(() => {
@@ -37,7 +37,7 @@ export const App = () => {
           </p>
 
           <div className="my-3">
-            <a href={social.github} className="fs-1 text-body-emphasis">
+            <a href={socials[0].href} className="fs-1 text-body-emphasis">
               <i className="fa-brands fa-github me-1"></i>
             </a>
           </div>

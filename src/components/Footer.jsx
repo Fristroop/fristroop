@@ -1,5 +1,5 @@
 import logo from "../assets/imgs/logo.png";
-import { pages, social } from "../config";
+import { pages, socials } from "../config";
 
 export const Footer = () => {
   return (
@@ -38,16 +38,16 @@ export const Footer = () => {
           <div className="col mb-3">
             <h5>Social</h5>
             <ul className="nav flex-column">
-              {Object.entries(social).map(([k, v], i) => (
+              {socials.map((p, i) => (
                 <li key={i} className="nav-item mb-2">
                   <a
-                    href={v}
+                    href={p.href}
                     target="_blank"
                     rel="noreferrer"
                     className="nav-link p-0 text-body-secondary"
                   >
-                    <i className={`fa-brands fa-${k} me-2`}></i>
-                    <span className="text-capitalize">{k}</span>
+                    <i className={`${p.icon} me-2`}></i>
+                    <span className="text-capitalize">{p.label}</span>
                   </a>
                 </li>
               ))}

@@ -1,6 +1,6 @@
 import logo from "../assets/imgs/logo.png";
 import { useEffect } from "react";
-import { pages, social } from "../config";
+import { pages, socials } from "../config";
 
 export const Navbar = () => {
   useEffect(() => {
@@ -72,17 +72,19 @@ export const Navbar = () => {
                 ))}
               </ul>
               <hr />
-              <div className="navbar-nav flex-row flex-wrap ms-md-auto me-md-3 fs-5">
-                {Object.entries(social).map(([k, v], i) => (
+              <div className="navbar-nav flex-row flex-wrap ms-md-auto me-md-3">
+                {socials.map((p, i) => (
                   <li key={i} className="nav-item col-6 col-md-auto">
                     <a
-                      href={v}
+                      href={p.href}
                       target="_blank"
                       rel="noreferrer"
                       className="nav-link"
                     >
-                      <i className={`fa-brands fa-${k} me-2`}></i>
-                      <small className="d-md-none text-capitalize">{k}</small>
+                      <i className={`${p.icon} me-2`}></i>
+                      <small className="d-md-none text-capitalize">
+                        {p.label}
+                      </small>
                     </a>
                   </li>
                 ))}
