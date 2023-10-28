@@ -3,8 +3,61 @@ import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 
 import "../assets/styles/squad.css";
+import { social } from "../config";
 
 export const Squad = () => {
+  const squad = [
+    {
+      avatar:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64N43TRHQIznXrMGk3MxoYwJ7nA9hbcskDWAgmO4&s",
+      username: "AydinTheFirst",
+      role: "Founder",
+      skills: [
+        {
+          color: "text-warning",
+          icon: "fa-brands fa-js",
+          label: "JavaScript",
+          href: "https://nodejs.org",
+        },
+        {
+          color: "text-success",
+          icon: "fa-brands fa-node-js",
+          label: "NodeJS",
+          href: "https://nodejs.org",
+        },
+        {
+          color: "text-warning",
+          icon: "fa-solid fa-database",
+          label: "MongoDB",
+          href: "https://www.mongodb.com",
+        },
+        {
+          color: "text-primary",
+          icon: "fa-brands fa-react",
+          label: "React",
+          href: "https://react.dev",
+        },
+        {
+          color: "text-primary",
+          icon: "fa-brands fa-bootstrap",
+          label: "Bootstrap",
+          href: "https://react.dev",
+        },
+      ],
+      socials: [
+        {
+          icon: "fa-brands fa-github",
+          label: "Github",
+          href: "https://github.com/AydinTheFirst",
+        },
+        {
+          icon: "fa-brands fa-instagram",
+          label: "Instagram",
+          href: "https://www.instagram.com/aydnhalil0/",
+        },
+      ],
+    },
+  ];
   return (
     <>
       <Navbar />
@@ -18,40 +71,58 @@ export const Squad = () => {
           </div>
         </section>
 
-        <div className="card-group justify-content-center">
-          <div className="col-md-6">
-            <div className="card border-0">
-              <div className="card-body text-center">
+        <div className="d-flex flex-row flex-wrap gap-3 justify-content-center px-2">
+          {squad.map((user, i) => (
+            <div
+              key={i}
+              className="profile card col-md-4 bg-dark-subtle rounded p-0"
+            >
+              <div className="bg-success px-3 py-5 header rounded-top">
                 <img
-                  src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                  className="d-flex mx-auto mb-3 rounded"
-                  height={"100px"}
-                  alt="..."
+                  src={user.avatar}
+                  alt="avatar"
+                  className="avatar p-1 bg-dark-subtle"
+                  height={100}
                 />
-                <h5 className="card-title">
-                  @AydinTheFirst <small className="text-muted">(Founder)</small>{" "}
-                </h5>
-
-                <p className="card-text text-muted">
-                  Hello! My name is Aydin, and I'm a 19-year-old student
-                  majoring in English language and literature. I began my
-                  journey at the age of 16, starting with an interest in website
-                  development. I first worked on HTML, and later, I became
-                  interested in Node.js. My initial project was a Discord bot,
-                  and I have since improved my skills in web technologies. Now,
-                  I'm here, and I want to assist you on your journey
-                </p>
-                <div className="card-text d-flex justify-content-center">
-                  <a href="https://github.com/AydinTheFirst" className="btn fs-3">
-                    <i className="fa-brands fa-github"></i>
-                  </a>
-                  <a href="https://www.instagram.com/aydnhalil0/" className="btn fs-3">
-                    <i className="fa-brands fa-instagram"></i>
-                  </a>
+              </div>
+              <div className="body px-3">
+                <div className="d-flex justify-content-between mb-3">
+                  <div className="d-flex align-items-center">
+                    <h5>
+                      {user.username}
+                      <small className="ms-3 text-muted">{user.role}</small>
+                    </h5>
+                  </div>
+                </div>
+                <div className="inner-body bg-secondary-subtle rounded p-3 mb-3">
+                  <ul className="list-unstyled details">
+                    <li className="mb-3">
+                      <small className="m-0 text-muted fw-bold">Skills</small>
+                      <div className="d-flex flex-wrap gap-3 align-items-center">
+                        {user.skills.map((s, i) => (
+                          <a href={s.href} className="nav-link" key={i}>
+                            <i className={`${s.icon} ${s.color} me-2`}></i>
+                            {s.label}
+                          </a>
+                        ))}
+                      </div>
+                    </li>
+                    <li className="mb-3">
+                      <small className="m-0 text-muted fw-bold">Socials</small>
+                      <div className="d-flex flex-wrap gap-3 align-items-center">
+                        {user.socials.map((s, i) => (
+                          <a href={s.href} className="nav-link" key={i}>
+                            <i className={`${s.icon} ${s.color} me-2`}></i>
+                            {s.label}
+                          </a>
+                        ))}
+                      </div>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </main>
 

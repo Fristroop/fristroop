@@ -1,21 +1,8 @@
 import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
+import { projects } from "../config";
 
 export const Projects = () => {
-  const projects = [
-    {
-      title: "FT-Chat",
-      description: "A minimized real-time chat application with rooms feature.",
-      demo: "https://chat.fristroop.com",
-      img: "https://storage.cloud.google.com/fristroop/resim_2023-10-22_235049761.png",
-    },
-    {
-      title: "Halo Magazine",
-      description: "A magazine of english literature written by students.",
-      demo: "https://halo.fristroop.com",
-      img: "https://storage.cloud.google.com/fristroop/resim_2023-10-22_235345323.png",
-    },
-  ];
   return (
     <>
       <Navbar />
@@ -43,10 +30,15 @@ export const Projects = () => {
                     className="card-img-top"
                     width="100%"
                     height="225"
-                    src={p.img}
+                    src={p.banner}
                   />
                   <div className="card-body">
-                    <a href={p.demo} className="fs-4 text-decoration-none" target="_blank" rel="noreferrer">
+                    <a
+                      href={p.href}
+                      className="fs-4 text-decoration-none"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       {p.title}
                     </a>
                     <p className="card-text mt-2">{p.description}</p>

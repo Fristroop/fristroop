@@ -25,7 +25,7 @@
 }
 
 .colored {
-  background: linear-gradient(to right, #29c7d7, #f98d38);
+  background: linear-gradient(to right, var(--bs-cyan), var(--bs-orange));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -61,7 +61,7 @@
     transparent,
     transparent,
     transparent,
-    #f98d38
+    var(--bs-cyan)
   );
   animation: animate 4s linear infinite;
   animation-delay: -2s;
@@ -76,7 +76,7 @@
     transparent,
     transparent,
     transparent,
-    #29c7d7
+    var(--bs-orange)
   );
   animation: animate 4s linear infinite;
 }

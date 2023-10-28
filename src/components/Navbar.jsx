@@ -1,6 +1,6 @@
 import logo from "../assets/imgs/logo.png";
 import { useEffect } from "react";
-import { social } from "../config";
+import { pages, social } from "../config";
 
 export const Navbar = () => {
   useEffect(() => {
@@ -61,70 +61,31 @@ export const Navbar = () => {
             </div>
 
             <div className="offcanvas-body">
-              <ul className="navbar-nav flex-wrap flex-grow-1">
-                <li className="nav-item">
-                  <a href="/" className="nav-link">
-                    <i className="fa-solid fa-share-from-square me-2 d-md-none"></i>
-                    Home
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="/projects" className="nav-link">
-                    <i className="fa-solid fa-list-check me-2 d-md-none"></i>
-                    Projects
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="/pricing" className="nav-link">
-                    <i className="fa-solid fa-hand-holding-dollar me-2 d-md-none"></i>
-                    Pricing
-                  </a>
-                </li>
-                <li className="nav-item">
-                  <a href="/squad" className="nav-link">
-                    <i className="fa-solid fa-user-group me-2 d-md-none text-nowrap"></i>
-                    Squad
-                  </a>
-                </li>
+              <ul className="navbar-nav flex-wrap flex-grow-1 align-items-md-center">
+                {pages.map((p, i) => (
+                  <li key={i} className="nav-item">
+                    <a href={p.href} className="nav-link">
+                      <i className={`fa-solid  ${p.icon} me-2 d-md-none`}></i>
+                      {p.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
               <hr />
-              <div className="navbar-nav flex-row flex-wrap ms-md-auto">
-                <a
-                  href={social.github}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="nav-link col-6 col-md-auto"
-                >
-                  <i className="fa-brands fa-github"></i>
-                  <small className="d-md-none ms-2">Github</small>
-                </a>
-                <a
-                  href={social.twitter}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="nav-link col-6 col-md-auto"
-                >
-                  <i className="fa-brands fa-x-twitter"></i>
-                  <small className="d-md-none ms-2">X</small>
-                </a>
-                <a
-                  href={social.instagram}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="nav-link col-6 col-md-auto"
-                >
-                  <i className="fa-brands fa-instagram"></i>
-                  <small className="d-md-none ms-2">Instagram</small>
-                </a>
-                <a
-                  href={social.tiktok}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="nav-link col-6 col-md-auto"
-                >
-                  <i className="fa-brands fa-tiktok"></i>
-                  <small className="d-md-none ms-2">Tiktok</small>
-                </a>
+              <div className="navbar-nav flex-row flex-wrap ms-md-auto me-md-3 fs-5">
+                {Object.entries(social).map(([k, v], i) => (
+                  <li key={i} className="nav-item col-6 col-md-auto">
+                    <a
+                      href={v}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="nav-link"
+                    >
+                      <i className={`fa-brands fa-${k} me-2`}></i>
+                      <small className="d-md-none text-capitalize">{k}</small>
+                    </a>
+                  </li>
+                ))}
               </div>
             </div>
           </div>
