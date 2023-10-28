@@ -9,7 +9,7 @@ export const Squad = () => {
     {
       avatar: "https://avatars.githubusercontent.com/u/84444757?v=4",
       username: "AydinTheFirst",
-      role: "Founder",
+      role: "Founder, FullStack Developer",
       skills: [
         {
           color: "text-warning",
@@ -73,7 +73,7 @@ export const Squad = () => {
           {squad.map((user, i) => (
             <div
               key={i}
-              className="profile card col-md-4 bg-dark-subtle rounded p-0"
+              className="profile card col-md-5 bg-dark-subtle rounded p-0"
             >
               <div className="bg-success px-3 py-5 header rounded-top">
                 <img
@@ -84,13 +84,19 @@ export const Squad = () => {
                 />
               </div>
               <div className="body px-3">
-                <div className="d-flex justify-content-between mb-3">
-                  <div className="d-flex align-items-center">
-                    <h5>
-                      {user.username}
-                      <small className="ms-3 text-muted">{user.role}</small>
-                    </h5>
+                <div className="d-flex justify-content-between gap-3 flex-wrap mb-3">
+                  <div>
+                    <h5>{user.username}</h5>
                   </div>
+                  <nav aria-label="breadcrumb">
+                    <ol className="breadcrumb">
+                      {user.role.split(",").map((r, i) => (
+                        <li key={i} className="breadcrumb-item">
+                          {r}
+                        </li>
+                      ))}
+                    </ol>
+                  </nav>
                 </div>
                 <div className="inner-body bg-secondary-subtle rounded p-3 mb-3">
                   <ul className="list-unstyled details">

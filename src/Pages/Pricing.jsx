@@ -38,7 +38,7 @@ export const Pricing = () => {
               </div>
               <div className="card-body">
                 <h1 className="card-title pricing-card-title">
-                  $50
+                  $0
                   <small className="text-body-secondary fw-light">/year</small>
                 </h1>
                 <ul className="list-unstyled mt-3 mb-4">
@@ -57,7 +57,7 @@ export const Pricing = () => {
               </div>
               <div className="card-body">
                 <h1 className="card-title pricing-card-title">
-                  $100
+                  $0
                   <small className="text-body-secondary fw-light">/year</small>
                 </h1>
                 <ul className="list-unstyled mt-3 mb-4">
@@ -103,7 +103,7 @@ export const Pricing = () => {
                 </th>
                 <td>Basic</td>
                 <td>Advaned</td>
-                <td>Custom</td>
+                <td>Advanced</td>
               </tr>
               <tr>
                 <th scope="row" className="text-start">
@@ -111,7 +111,7 @@ export const Pricing = () => {
                 </th>
                 <td>Basic</td>
                 <td>Advanced</td>
-                <td>Custom</td>
+                <td>Advanced</td>
               </tr>
               <tr>
                 <th scope="row" className="text-start">
