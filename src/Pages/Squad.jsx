@@ -3,13 +3,11 @@ import { Footer } from "../components/Footer";
 import { Navbar } from "../components/Navbar";
 
 import "../assets/styles/squad.css";
-import { social } from "../config";
 
 export const Squad = () => {
   const squad = [
     {
-      avatar:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ64N43TRHQIznXrMGk3MxoYwJ7nA9hbcskDWAgmO4&s",
+      avatar: "https://avatars.githubusercontent.com/u/84444757?v=4",
       username: "AydinTheFirst",
       role: "Founder",
       skills: [
@@ -17,7 +15,7 @@ export const Squad = () => {
           color: "text-warning",
           icon: "fa-brands fa-js",
           label: "JavaScript",
-          href: "https://nodejs.org",
+          href: "https://www.javascript.com",
         },
         {
           color: "text-success",
