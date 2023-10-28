@@ -85,9 +85,7 @@ export const Squad = () => {
               </div>
               <div className="body px-3">
                 <div className="d-flex justify-content-between gap-3 flex-wrap mb-3">
-                  <div>
-                    <h5>{user.username}</h5>
-                  </div>
+                  <h5 className="m-0">{user.username}</h5>
                   <nav aria-label="breadcrumb">
                     <ol className="breadcrumb text-muted">
                       {user.role.split(",").map((r, i) => (
