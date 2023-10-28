@@ -1,13 +1,16 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import "bootstrap";
+import "@popperjs/core";
+import "./assets/bootstrap.scss";
+import "aos/dist/aos.css";
+
 import { App } from "./Pages/App";
 import { NotFound } from "./Pages/NotFound";
 import { Projects } from "./Pages/Projects";
 import { Pricing } from "./Pages/Pricing";
 import { Squad } from "./Pages/Squad";
-
-import './assets/bootstrap.scss';
 
 document.body.setAttribute(
   "data-bs-theme",

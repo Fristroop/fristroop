@@ -1,8 +1,9 @@
-.navbar {
+#navbar {
   position: fixed;
   top: 0;
   width: 100%;
   backdrop-filter: blur(10px);
+  z-index: 100;
 }
 
 .navbar-brand {
@@ -23,17 +24,68 @@
   box-shadow: none;
 }
 
-.nav-link {
-  transition: all 0.35s;
-}
-
-.nav-link:hover {
-  text-decoration: underline;
-}
-
 .colored {
   background: linear-gradient(to right, #29c7d7, #f98d38);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+.box {
+  position: relative;
+  display: flex;
+  margin: auto;
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.box span {
+  position: absolute;
+  inset: 5px;
+  background: #121212;
+  z-index: 1;
+}
+
+.box img {
+  z-index: 2;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #f98d38
+  );
+  animation: animate 4s linear infinite;
+  animation-delay: -2s;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-image: conic-gradient(
+    transparent,
+    transparent,
+    transparent,
+    #29c7d7
+  );
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

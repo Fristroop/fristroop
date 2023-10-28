@@ -1,2 +1,6 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #121212;
+}

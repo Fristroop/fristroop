@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+import AOS from "aos";
+import { useEffect } from "react";
 import { Navbar } from "../components/Navbar";
 import { Theme } from "../components/Theme";
 import { Footer } from "../components/Footer";
@@ -7,8 +9,12 @@ import "../assets/styles/app.css";
 
 import logo from "../assets/imgs/logo.png";
 import coding from "../assets/imgs/coding.jpg";
+import { social } from "../config";
 
 export const App = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Theme />
@@ -16,7 +22,10 @@ export const App = () => {
 
       <main className="container mt-5">
         <div className="col-md-6 mb-5 mx-auto text-center fw-bold">
-          <img src={logo} width={"200px"} alt="" />
+          <div className="box rounded rounded-5 p-3 mb-3">
+            <span className="rounded rounded-5"></span>
+            <img src={logo} width={"200px"} alt="" />
+          </div>
           <h1 className="colored fw-bold">Experience the Extraordinary</h1>
           <div className="fs-3 mb-3">Get Your Dream Website</div>
           <p className="text-muted">
@@ -26,15 +35,12 @@ export const App = () => {
           </p>
 
           <div className="my-3">
-            <a
-              href="https://github.com/Fristroop"
-              className="fs-1 text-body-emphasis"
-            >
+            <a href={social.github} className="fs-1 text-body-emphasis">
               <i className="fa-brands fa-github me-1"></i>
             </a>
           </div>
 
-          <button className="btn border">
+          <button className="btn border fs-5" data-aos="fade-in">
             <small>$ </small>
             <code>sudo hire best-developers --now</code>
           </button>
@@ -55,7 +61,6 @@ export const App = () => {
                 understand the critical importance of web accessibility, speed,
                 and security in today's digital landscape.
                 <span className="text-info">
-                  {" "}
                   That's why we're here to provide you with the latest insights,
                   tips, and best practices to help you stay at the forefront of
                   web development.
