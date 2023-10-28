@@ -89,7 +89,7 @@ export const Squad = () => {
                     <h5>{user.username}</h5>
                   </div>
                   <nav aria-label="breadcrumb">
-                    <ol className="breadcrumb">
+                    <ol className="breadcrumb text-muted">
                       {user.role.split(",").map((r, i) => (
                         <li key={i} className="breadcrumb-item">
                           {r}
