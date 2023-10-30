@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <>
       <footer className="py-5 px-3 my-5 border-top">
-        <div className="container row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div className="container m-0 row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
           <div className="col mb-3 d-flex">
             <a
               href={"/"}
@@ -20,7 +20,6 @@ export const Footer = () => {
           </div>
 
           <div className="col mb-3"></div>
-
           <div className="col mb-3">
             <h5>Pages</h5>
             <ul className="nav flex-column">

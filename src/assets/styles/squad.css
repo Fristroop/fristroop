@@ -6,6 +6,8 @@
   position: absolute;
   bottom: -50px;
   border-radius: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 .profile .body {

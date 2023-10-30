@@ -29,11 +29,11 @@ export const App = () => {
             <img src={logo} width={"200px"} alt="" />
           </div>
           <h1 className="colored fw-bold">Experience the Extraordinary</h1>
-          <div className="fs-3 mb-3">Get Your Dream Website</div>
+          <div className="fs-3 mb-3">Let Dreams Come True</div>
           <p className="text-muted">
-            We are dedicated to assisting you in creating stunning, accessible,
-            fast, and secure websites that perform seamlessly across all
-            browsers and ensure an exceptional experience for all of your users
+            We are dedicated tocreating stunning, accessible, fast, and secure
+            websites that perform seamlessly across all browsers and ensure an
+            exceptional experience for everyone
           </p>
 
           <div className="my-3">
@@ -42,8 +42,8 @@ export const App = () => {
             </a>
           </div>
 
-          <a href="/pricing" className="btn border fs-5" data-aos="fade-in">
-            <small>$ </small>
+          <a href="/pricing" className="btn border" data-aos="fade-in">
+            <small className="me-2">$</small>
             <code style={{ color: "var(--bs-code-color)" }}>
               sudo hire best-developers --now
             </code>
@@ -61,7 +61,7 @@ export const App = () => {
                 believe in the power of the web to transform and elevate
                 businesses. Our mission is to empower you with the knowledge,
                 tools, and insights to build exceptional web experiences that
-                not only meet but exceed the expectations of your users. We
+                not only meet but exceed the expectations of our users. We
                 understand the critical importance of web accessibility, speed,
                 and security in today's digital landscape.
                 <span
@@ -69,14 +69,10 @@ export const App = () => {
                   data-aos="fade-up"
                   data-aos-delay="500"
                 >
-                  That's why we're here to provide you with the latest insights,
-                  tips, and best practices to help you stay at the forefront of
-                  web development.
+                  That's why we're here to provide with the latest insights,
+                  tips, and best practices to stay at the forefront of web
+                  development.
                 </span>
-                Whether you're a seasoned
-                <span className="text-warning"> entrepreneur</span> or just
-                starting your journey, you'll find a wealth of resources and
-                expertise here to support you.
               </p>
             </div>
             <div className="col-md-6">
@@ -90,8 +86,8 @@ export const App = () => {
           </div>
         </div>
 
-        <div className="col-12 px-4 py-5">
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div className="col-12 mb-3">
+          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
             <div className="col d-flex align-items-start">
               <i className="fa-solid fa-bolt text-warning flex-shrink-0 me-3 fs-3"></i>
               <div data-aos="fade-in">
@@ -120,7 +116,7 @@ export const App = () => {
                   User-Friendly Interface (UI/UX)
                 </h4>
                 <p className="text-muted">
-                  Your website will have an easy-to-navigate and user-friendly
+                  Our websites have an easy-to-navigate and user-friendly
                   design, with visually appealing ad content to engage users
                   effectively.
                 </p>
@@ -131,8 +127,8 @@ export const App = () => {
               <div data-aos="fade-in">
                 <h4 className="fw-bold mb-1">Animations And Designs</h4>
                 <p className="text-muted">
-                  With smooth colored designs your community will love your new
-                  website.
+                  With smooth colored designs we will provide best exprience to
+                  our users.
                 </p>
               </div>
             </div>
@@ -140,7 +136,7 @@ export const App = () => {
         </div>
 
         <div className="col-12 my-5 d-flex justify-content-center">
-          <a href="/pricing" className="btn btn-outline-info fw-bold">
+          <a href="/pricing" className="btn btn-outline-success fw-bold">
             Start your journey with Fristroop now!
           </a>
         </div>

@@ -21,7 +21,7 @@ export const Navbar = () => {
   return (
     <>
       <nav id="navbar" className="navbar navbar-expand-md">
-        <div className="container-fluid">
+        <div className="container">
           <a href={"/"} className="navbar-brand d-flex align-items-center">
             <img src={logo} alt="Logo" height="50" className="logo mx-1" />
             <div className="fs-5 fw-bold m-0">FRISTROOP</div>
@@ -72,7 +72,7 @@ export const Navbar = () => {
                 ))}
               </ul>
               <hr />
-              <div className="navbar-nav flex-row flex-wrap ms-md-auto me-md-3">
+              <div className="navbar-nav flex-row flex-wrap">
                 {socials.map((p, i) => (
                   <li key={i} className="nav-item col-6 col-md-auto">
                     <a

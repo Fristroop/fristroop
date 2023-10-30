@@ -16,11 +16,9 @@
 
 .navbar-toggler {
   border: none;
-  color: #ddd;
 }
 
 .navbar-toggler:focus {
-  color: #fff;
   box-shadow: none;
 }
 

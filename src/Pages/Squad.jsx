@@ -5,11 +5,19 @@ import { Navbar } from "../components/Navbar";
 import "../assets/styles/squad.css";
 
 export const Squad = () => {
+  const bgColors = [
+    "bg-primary",
+    "bg-success",
+    "bg-warning",
+    "bg-danger",
+    "bg-info",
+    "bg-secondary",
+  ];
   const squad = [
     {
       avatar: "https://avatars.githubusercontent.com/u/84444757?v=4",
       username: "AydinTheFirst",
-      role: "Founder, FullStack Developer",
+      role: "Founder, Fullstack Developer",
       skills: [
         {
           color: "text-warning",
@@ -55,6 +63,32 @@ export const Squad = () => {
         },
       ],
     },
+    {
+      avatar: "/logo.png",
+      username: "Theodor",
+      role: "Founder, Marketer",
+      skills: [
+        {
+          color: "text-warning",
+          icon: "fa-brands fa-js",
+          label: "JavaScript",
+          href: "https://www.javascript.com",
+        },
+        {
+          color: "text-success",
+          icon: "fa-brands fa-html5",
+          label: "HTML5",
+          href: "https://html.com/",
+        },
+        {
+          color: "text-primary",
+          icon: "fa-brands fa-css3",
+          label: "CSS",
+          href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        },
+      ],
+      socials: [],
+    },
   ];
   return (
     <>
@@ -75,7 +109,11 @@ export const Squad = () => {
               key={i}
               className="profile card col-md-5 bg-dark-subtle rounded p-0"
             >
-              <div className="bg-success px-3 py-5 header rounded-top">
+              <div
+                className={`px-3 py-5 header rounded-top ${
+                  bgColors[Math.ceil(Math.random() * bgColors.length - 1)]
+                }`}
+              >
                 <img
                   src={user.avatar}
                   alt="avatar"
