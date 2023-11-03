@@ -4,10 +4,10 @@ import { pages, socials } from "../config";
 export const Footer = () => {
   return (
     <>
-      <footer className="bg-dark-subtle border-top">
-        <div className="container py-5 px-5">
+      <footer className="border-top">
+        <div className="container py-5">
           <div className="row">
-            <div className="col-lg-3 mb-3 d-flex justify-content-center">
+            <div className="col-lg-3 mb-3">
               <a href={"/"} className="nav-link d-flex">
                 <img src={logo} alt="Logo" height="100" className="mx-1" />
                 <div className="fs-2 fw-bold m-0">
