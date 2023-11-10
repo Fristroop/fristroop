@@ -41,7 +41,7 @@
 
 .box span {
   position: absolute;
-  inset: 5px;
+  inset: 1px;
   background: var(--bs-body-bg);
   z-index: 1;
 }

@@ -5,6 +5,7 @@ import "bootstrap";
 import "@popperjs/core";
 import "./assets/bootstrap.scss";
 import "aos/dist/aos.css";
+import "animate.css";
 
 import { App } from "./Pages/App";
 import { NotFound } from "./Pages/NotFound";

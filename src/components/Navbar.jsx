@@ -21,14 +21,9 @@ export const Navbar = () => {
   return (
     <>
       <nav id="navbar" className="navbar navbar-expand-md">
-        <div className="container">
-          <a href={"/"} className="navbar-brand d-flex align-items-center">
-            <img src={logo} alt="Logo" height="50" className="logo mx-1" />
-            <div className="fs-5 fw-bold m-0">FRISTROOP</div>
-          </a>
-
+        <div className="container-fluid">
           <button
-            className="navbar-toggler"
+            className="navbar-toggler order-2"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
@@ -37,6 +32,11 @@ export const Navbar = () => {
           >
             <i className="fa-solid fa-bars"></i>
           </button>
+
+          <a href={"/"} className="navbar-brand d-flex align-items-center">
+            <img src={logo} alt="Logo" height="50" className="logo mx-1" />
+            <div className="fs-5 fw-bold m-0">FRISTROOP</div>
+          </a>
 
           <div
             className="offcanvas offcanvas-end"

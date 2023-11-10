@@ -2,6 +2,13 @@
 
 @import "bootstrap/scss/bootstrap";
 
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].animate__animated {
+  visibility: visible;
+}
+
 [data-bs-theme="dark"] {
   --bs-body-bg: #121212;
 }
