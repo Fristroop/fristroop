@@ -1,8 +1,12 @@
-# React + Vite
+<img width="150" height="150" align="left" style="float: left; margin: 0 10px 0 0;" alt="Xiao" src="https://fristroop.com/assets/logo-7d84cf41.png">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# [Fristroop Website](https://fristroop.com)
 
-Currently, two official plugins are available:
+# [Fristroop Web Development / Github](https://github.com/Fristroop)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Links
+
+- [Website Documentation](https://easypanel-js.fristroop.com)
+- [Fristroop Discord server](https://discord.gg/c4hrGHwSgS)
+- [GitHub](https://github.com/Fristroop/easypanel.js)
+- [NPM](https://www.npmjs.com/package/easypanel.js)
