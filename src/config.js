@@ -8,6 +8,11 @@ export const socials = [
     href: "https://github.com/Fristroop",
   },
   {
+    icon: "fa-brands fa-discord",
+    label: "Discord",
+    href: "https://discord.com/invite/c4hrGHwSgS",
+  },
+  {
     icon: "fa-brands fa-x-twitter",
     label: "x",
     href: "https://x.com/Fristroop",
@@ -33,7 +38,7 @@ export const pages = [
   {
     icon: "fa-list-check",
     label: "Projects",
-    href: "/projects",
+    href: "https://github.com/Fristroop",
   },
   {
     icon: "fa-hand-holding-dollar",

@@ -61,7 +61,7 @@ export const Navbar = () => {
             </div>
 
             <div className="offcanvas-body">
-              <ul className="navbar-nav flex-wrap flex-grow-1 align-items-md-center">
+              <ul className="navbar-nav flex-wrap align-items-md-center mx-auto">
                 {pages.map((p, i) => (
                   <li key={i} className="nav-item">
                     <a href={p.href} className="nav-link">
@@ -72,21 +72,19 @@ export const Navbar = () => {
                 ))}
               </ul>
               <hr />
-              <div className="navbar-nav flex-row flex-wrap">
+              <div className="navbar-nav flex-row flex-wrap gap-3">
                 {socials.map((p, i) => (
-                  <li key={i} className="nav-item col-6 col-md-auto">
-                    <a
-                      href={p.href}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="nav-link"
-                    >
-                      <i className={`${p.icon} me-2`}></i>
-                      <small className="d-md-none text-capitalize">
-                        {p.label}
-                      </small>
-                    </a>
-                  </li>
+                  <a
+                    href={p.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn btn-dark"
+                  >
+                    <i className={`${p.icon}`}></i>
+                    <small className="d-md-none ms-2 text-capitalize">
+                      {p.label}
+                    </small>
+                  </a>
                 ))}
               </div>
             </div>
